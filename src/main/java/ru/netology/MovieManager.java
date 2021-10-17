@@ -41,7 +41,7 @@ public class MovieManager {
             resultLength = maxLength;
             result = new MovieItems[resultLength];
             for (int i = 0; i < resultLength; i++) {
-                int index = resultLength - i - 1;
+                int index = resultLength - i; //убрал -1
                 result[i] = items[index];
 //                System.out.println("Выводим последние фильмы (не более 10) " + i);
             }
@@ -56,5 +56,4 @@ public class MovieManager {
 
         return result;
     }
-
 }

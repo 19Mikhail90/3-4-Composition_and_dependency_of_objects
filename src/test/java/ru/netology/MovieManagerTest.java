@@ -117,7 +117,7 @@ class MovieManagerTest {
         manager.add(movie9);
         manager.add(movie10);
         manager.add(movie11);
-        MovieItems[] expected = new MovieItems[]{movie10, movie9, movie8, movie7, movie6, movie5, movie4, movie3, movie2, movie1};
+        MovieItems[] expected = new MovieItems[]{ movie11, movie10, movie9, movie8, movie7, movie6, movie5, movie4, movie3, movie2};
         MovieItems[] actual = manager.getAll();
         assertArrayEquals(expected, actual);
     }
